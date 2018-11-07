@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DB Index</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" type="text/css" href="css/mystyle.css">
+  </head>
+
+  <body>
+    <div class="form-style-5">
+      <form method="post" action="php/visualize.php">
+        <fieldset>
+          <legend><span class="number">1</span> Visualize</legend>
+        </fieldset>
+        <input type="submit" value="Visualize"/>
+      </form>
+      <br>
+      <form method="post" action="php/insert.php">
+        <fieldset>
+          <legend><span class="number">2</span> Insert</legend>
+            <input type="text" name="CodAutore" placeholder="Codice Autore">
+            <input type="text" name="Nome" placeholder="Nome">
+            <input type="text" name="Nazione" placeholder="Nazione">
+          </fieldset>
+        <input type="submit" value="Insert"/>
+      </form>
+      <br>
+      <form method="post" action="php/delete.php">
+        <fieldset>
+          <legend><span class="number">3</span> Delete</legend>
+            <input type="text" name="CodAutore" placeholder="Codice Autore">
+        </fieldset>
+        <input type="submit" value="Delete"/>
+      </form>
+      <br>
+      <form method="post" action="php/update.php">
+        <fieldset>
+          <legend><span class="number">4</span> Update</legend>
+            <input type="text" name="CodAutore" placeholder="Codice Autore">
+            <input type="text" name="Nome" placeholder="Nome">
+            <input type="text" name="Nazione" placeholder="Nazione">
+        </fieldset>
+        <input type="submit" value="Update"/>
+      </form>
+      <br>
+      <form method="post" action="php/updatecod.php">
+        <fieldset>
+          <legend><span class="number">5</span> Update CodAutore</legend>
+            <input type="text" name="oldCodAutore" placeholder="Vecchio Codice Autore">
+            <input type="text" name="CodAutore" placeholder="Nuovo Codice Autore">
+        </fieldset>
+        <input type="submit" value="Update CodAutor"/>
+      </form>
+    </div>
+  </body>
+</html>
